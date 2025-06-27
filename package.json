@@ -25,6 +25,7 @@
 	},
 	"homepage": "https://github.com/Nunes-ND/github_flow#readme",
 	"devDependencies": {
+		"@types/node": "^24.0.6",
 		"typescript": "^5.8.3"
 	}
 }
