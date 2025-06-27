@@ -1,0 +1,45 @@
+{
+	"name": "github_flow",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/main.js",
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"scripts": {
+		"start": "node dist/main.js",
+		"dev": "tsx watch --env-file .env src/main.ts",
+		"build": "tsc -p tsconfig.prod.json",
+		"build:dev": "tsc -p tsconfig.dev.json",
+		"lint": "biome lint --write",
+		"format": "biome format --write",
+		"check": "biome check --write --unsafe",
+		"prepare": "husky",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Nunes-ND/github_flow.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"bugs": {
+		"url": "https://github.com/Nunes-ND/github_flow/issues"
+	},
+	"homepage": "https://github.com/Nunes-ND/github_flow#readme",
+	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
+		"@types/node": "^24.0.6",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.1.2",
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3"
+	},
+	"lint-staged": {
+		"*.{js,ts,json}": [
+			"biome check --write --unsafe"
+		]
+	}
+}
