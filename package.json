@@ -25,6 +25,7 @@
 	},
 	"homepage": "https://github.com/Nunes-ND/github_flow#readme",
 	"devDependencies": {
+		"@biomejs/biome": "^2.0.6",
 		"@types/node": "^24.0.6",
 		"typescript": "^5.8.3"
 	}
