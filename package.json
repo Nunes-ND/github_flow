@@ -21,5 +21,8 @@
 	"bugs": {
 		"url": "https://github.com/Nunes-ND/github_flow/issues"
 	},
-	"homepage": "https://github.com/Nunes-ND/github_flow#readme"
+	"homepage": "https://github.com/Nunes-ND/github_flow#readme",
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	}
 }
