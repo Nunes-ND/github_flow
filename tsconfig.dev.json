@@ -5,5 +5,13 @@
 		"sourceMap": true,
 		"incremental": true
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*"],
+	"exclude": [
+		"dist",
+		"build",
+		"vitest.config.ts",
+		"tests/**/*",
+		"**/*.spec.ts",
+		"**/*.test.ts"
+	]
 }
