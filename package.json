@@ -15,7 +15,8 @@
 		"format": "biome format --write",
 		"check": "biome check --write --unsafe",
 		"prepare": "husky",
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "vitest run",
+		"test:watch": "vitest --watch"
 	},
 	"repository": {
 		"type": "git",
@@ -35,7 +36,9 @@
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.2",
 		"tsx": "^4.20.3",
-		"typescript": "^5.8.3"
+		"typescript": "^5.8.3",
+		"vite-tsconfig-paths": "^5.1.4",
+		"vitest": "^3.2.4"
 	},
 	"lint-staged": {
 		"*.{js,ts,json}": [
