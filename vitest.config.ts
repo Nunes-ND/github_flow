@@ -1,3 +1,4 @@
+import tsconfigPaths from "vite-tsconfig-paths";
 import { defineConfig } from "vitest/config";
 
 export default defineConfig({
@@ -23,4 +24,9 @@ export default defineConfig({
 		},
 		passWithNoTests: true,
 	},
+	plugins: [
+		tsconfigPaths({
+			projects: ["./tsconfig.json"],
+		}),
+	],
 });
